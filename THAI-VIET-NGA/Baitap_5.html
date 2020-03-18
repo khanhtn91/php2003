@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 5</title>
+    <style>
+        .main {
+            width: 100%;
+            float: left;
+        }
+
+        .left {
+            width: 30%;
+            float: left;
+        }
+
+        .left>img {
+            width: 252px;
+            height: auto;
+            vertical-align: bottom;
+            padding: 0px 24px;
+        }
+        .right {
+            margin-left: 30%;
+        }
+        .right>ol>li{
+            width: 70px;
+            background-color: tomato;
+        }
+        .right>ol>.square>li{
+            list-style-type: square;
+        }
+        .right>ol>.circle>li{
+            list-style-type: circle;
+        }
+        hr{
+            margin: 20px 0px 20px 25px;
+        }
+        .footer{
+            background-color: violet;
+            margin: 0px 0px 0px 63px;
+        }
+        .footer>p{
+            padding: 0px 0px 0px 5px;
+        }
+        h2{
+            text-align: center;
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h2>Công Ty Hoa Tươi Nhân Ái</h2>
+        <div class="left">
+            <img src="./images/flower.png" alt="">
+        </div>
+        <div class="right">
+            
+            <ol>
+                <li>Giới thiệu</li>
+                <ul class="square">
+                    <li>SP1</li>
+                    <li>SP2</li>
+                    <li>SP3</li>
+                    <li>SP4</li>
+                </ul>
+                <hr/>
+                <li>Liên hệ</li>
+                <ul class="circle">
+                    <li>Điện thoại: 0389.2888.35</li>
+                    <li>Địa chỉ: Quận Gò Vấp</li>
+                </ul>
+            </ol>
+            <div class="footer"> 
+               <p>
+                   &copy <b>Copyright:
+                   <a href="">Trung Tâm Tin Học - Đại Học Khoa Học Tự Nhiên TP. HCM</a></b>
+            </p>  
+            </div>
+        </div>
+        
+    </div>
+</body>
+
+</html>
