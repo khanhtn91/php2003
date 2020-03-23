@@ -1,0 +1,65 @@
+img {
+    float: left;
+    width: auto;
+    height: 320px;
+    margin-right: 40px;
+}
+
+.Thewholepage {
+    width: 800px;
+    margin: auto;
+    background-color: lightgrey;
+    padding: 35px;
+    border: 10px solid plum;
+    border-radius: 10px;
+    border-style: ridge;
+}
+
+#Title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: palevioletred;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.Subtitle {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Highlightword {
+    background-color: palevioletred;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Paragraph1 {
+    list-style-type: square;
+    list-style-position: inside;
+    font-size: 18px;
+}
+
+.Paragraph2 {
+    list-style-type: circle;
+    list-style-position: inside;
+    font-size: 18px;
+}
+
+.Explanation {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.Reference {
+    text-align: justify;
+    color: purple;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.Subtitle {
+    font-size: 20px;
+    font-weight: bold;
+}

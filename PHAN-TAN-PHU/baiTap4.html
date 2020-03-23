@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài Tập Số 5</title>
+    <style>
+        body{
+            width: 100%;
+            min-height: 400px;
+            padding: 0;
+            margin: 0 auto;
+        }
+        .wrapper{
+            width: 100%;
+            margin: 0 auto;          
+        }
+/*CSS Bài 1*/
+        .foodhanoi{
+            display: flex;
+            background-color: rgb(250, 196, 152);
+            padding: 20px 0;
+        }
+        .foodhanoi img{
+            margin-left: 25%;
+            width: 200px;
+            height: 200px;
+        }
+        .foodhanoi-list h2{
+            color: chocolate;
+        }
+        .foodHanoi-table{
+            width: 300px;
+            border-collapse: collapse;
+        }
+        .foodHanoi-table th{
+            background-color: rgba(245, 123, 67, 0.863);
+        }
+        .foodHanoi-table, th, td{
+            border: 2px solid rgb(228, 127, 248);
+        }
+        .foodHanoi-table tr:nth-child(2),.foodHanoi-table tr:nth-child(4),.foodHanoi-table tr:nth-child(6),.foodHanoi-table tr:nth-child(8){
+            background-color: #fff;
+        }
+
+/* CSS Bài 2*/
+        .deverloper{
+            width: 100%;
+            min-height: 300px;
+            margin: 0 auto;
+        }
+        h2{
+            text-align: center;
+            color: crimson;
+        }
+        .chuongtrinhhoc{
+            width: 600px;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+        .chuongtrinhhoc th{
+            color: #fff;
+            background-color: crimson;
+        }
+        .chuongtrinhhoc table, th, td{
+            border: 2px solid rgb(238, 152, 54);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="foodhanoi">
+            <img src="baiTap4.png" alt="Ẩm thực Hà Nội">
+            <div class="foodhanoi-list">
+                <h2>Các món ngon Hà Nội</h2>
+                <table class="foodHanoi-table">
+                    <tr>
+                        <th>STT</th>
+                        <th>Tên món ăn</th>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">1</td>
+                        <td>Bánh cuốn Thanh Trì</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">2</td>
+                        <td>Xôi Hà Nội</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">3</td>
+                        <td>Chả cá Lã Vọng</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">4</td>
+                        <td>Cháo Cóc</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">5</td>
+                        <td>Bánh Gai Ninh Giang</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">6</td>
+                        <td>Bún Thang Hà Nội</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">7</td>
+                        <td>Canh Lằng</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">8</td>
+                        <td>Vịt quay Lạng Sơn</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="deverloper">
+            <h2>Chương trình học - ngành lập trình</h2>
+            <table class="chuongtrinhhoc">
+                <tr>
+                    <th rowspan="2">Nhóm học phần</th>
+                    <th rowspan="2">Môn học</th>
+                    <th colspan="2">Số Tiết</th>
+                </tr>
+                <tr>
+                    <th>Lý thuyết</th>
+                    <th>Thực hành</th>
+                </tr>
+                <tr>
+                    <td rowspan="6" style="color: #cc0033;text-align: center;">I<br>Tin học Văn phòng</td>
+                    <td>Hệ điều hành Windows</td>
+                    <td>3</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Sử dụng Internet</td>
+                    <td>3</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Soạn thảo văn bảng với MS Word</td>
+                    <td>24</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>Tạo bài trình diễn với MS PowerPoint</td>
+                    <td>9</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>Xử lý số liệu với MS Excel</td>
+                    <td>24</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>Tạo trang web với MS Frontpage</td>
+                    <td>9</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td rowspan="2" style="color: #cc0033; text-align: center;">II<br>Kỹ thuật lập trình (VB.NET)</td>
+                    <td>Nhập môn lập trình</td>
+                    <td>36</td>
+                    <td>60</td>
+                </tr>
+                <tr>
+                    <td>Kỹ thuật lập trình</td>
+                    <td>36</td>
+                    <td>60</td>
+                </tr>
+                <tr>
+                    <td colspan="4">....</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

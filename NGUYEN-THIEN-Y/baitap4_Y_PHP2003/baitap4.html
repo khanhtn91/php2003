@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Bai tap 4</title>
+    <style type="text/CSS">
+        div#main {
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            }
+            
+    /* cac mon ngon ha noi*/    
+        div#foodmenu {
+            width: 700px;
+            background-color: #FFECA0;
+            font-size: 18px;
+            margin-right: auto;
+            margin-left: auto;
+            padding-bottom: 20px;
+            padding-top: 20px;
+            }
+            
+        div#menu {
+            width: 500px;
+            margin-left: auto;
+            margin-right: 70px;
+            }            
+        
+        div#menu h2 {
+            margin-top: 0px;
+            color: #C66B0B;
+            }
+            
+        img#logo {
+            width: 150px;
+            float: left;
+            margin-left: 70px;
+            margin-right: 10px;
+            margin-top: 30px;
+            }    
+        
+        div#menu td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            }
+            
+        div#menu th {
+            border: 1px solid black;
+            border-collapse: collapse;
+            background-color: #E6851F;
+            color: white;
+            }
+            
+        div#menu table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            }
+        
+        div#menu td:first-child {
+            text-align: center;
+            }
+        
+        div#menu td:last-child {
+            width: 100%;
+            }
+            
+        div#menu tr:nth-child(odd) {
+            background-color:#FFECA0;}
+            
+        div#menu tr:nth-child(even) {
+            background-color: white;
+            }
+            
+    /*chuong trinh hoc*/            
+        div#chuongtrinh {
+            width: 700px;            
+            margin-right: auto;
+            margin-left: auto;
+            font-size: 12px;
+            font-family: tahoma, sans-serif;
+            }
+        
+        div#chuongtrinh table {
+            border: 1px solid #FF3467;
+            border-collapse: collapse;
+            margin-right: 0px;
+            margin-left: auto;
+            }           
+        
+        div#chuongtrinh td {
+            border: 1px solid #FF3467;
+            border-collapse: collapse;
+            padding: 3px;
+            }
+            
+        div#chuongtrinh th {
+            color: white;
+            border: 1px solid #FF3467;
+            border-collapse: collapse;
+            background-color: #CC0033;
+            padding: 1px;
+            }
+            
+        div#chuongtrinh h2{
+            color: #CC0033;
+            text-align: center;
+            }
+            
+        div#chuongtrinh td.textcenter,    
+        div#chuongtrinh td:nth-child(4),
+        div#chuongtrinh td:nth-child(3),
+        div#chuongtrinh td:nth-child(2) {
+            text-align: center;
+            }
+            
+        div#chuongtrinh td.textcenter + td {
+            text-align: left;}
+    </style>
+</head>
+<body>
+    <div id="main">
+    
+        <!--cac mon ngon ha noi-->
+        
+        <div id="foodmenu">    
+            <img id="logo" src="./food.png" alt="logo">
+            <div id="menu">            
+                <h2>Các món ngon Hà Nội</h2>
+                <table>
+                    <tr> <!--head row-->
+                        <th>STT</th>
+                        <th>Tên món ăn</th>            
+                    </tr>
+                    <tr> <!--row1-->
+                        <td>1.</td>
+                        <td>Bánh cuốn Thanh Trì</td>            
+                    </tr>
+                    <tr> <!--row2-->
+                        <td>2.</td>
+                        <td>Xôi Hà Nội</td>
+                    </tr>
+                    <tr> <!--row3-->
+                        <td>3.</td>
+                        <td>Chả cá Lã Vọng</td>
+                    </tr>
+                    <tr> <!--row4-->
+                        <td>4.</td>
+                        <td>Cháo Cóc</td>            
+                    </tr>
+                    <tr> <!--row5-->
+                        <td>5.</td>
+                        <td>Bánh Gai Ninh Giang</td>
+                    </tr>
+                    <tr> <!--row6-->
+                        <td>6.</td>
+                        <td>Bún Thang Hà Nội</td>
+                    </tr>
+                    <tr> <!--row7-->
+                        <td>7.</td>
+                        <td>Canh Lằng</td>
+                    </tr>
+                    <tr> <!--row8-->
+                        <td>8.</td>
+                        <td>Vịt quay Lạng Sơn</td>
+                    </tr>
+                </table>
+            </div>
+        </div> 
+               
+        <!--chuong trinh hoc-->
+        
+        <div id="chuongtrinh">
+            <table> <!-- 11 row x 4 col-->
+                <caption>
+                    <h2>Chương trình học - ngành lập trình</h2>
+                </caption>
+                <tr><!--row1-->                
+                    <th rowspan="2">Nhóm học phần</th>
+                    <th rowspan="2">Môn học</th>
+                    <th colspan="2">Số tiết</th>
+                </tr>
+                <tr><!--row2-->
+                    <th>Lý thuyết</th>
+                    <th>Thực hành</th>
+                </tr>          
+                <tr> <!--row3-->
+                    <td class="textcenter" rowspan="6">I<br>Tin học văn phòng</td>
+                    <td>Hệ điều hành Windows</td>
+                    <td>3</td>
+                    <td>5</td>
+                </tr>
+                <tr><!--row4-->
+                    <td>Sử dụng Internet</td>
+                    <td>3</td>
+                    <td>5</td>
+                </tr>
+                <tr><!--row5-->
+                    <td>Soạn thảo văn bản với MS Word</td>
+                    <td>24</td>
+                    <td>40</td>
+                </tr>
+                <tr><!--row6-->
+                    <td>Tạo bài trình diễn với MS Powerpoint</td>
+                    <td>9</td>
+                    <td>15</td>
+                </tr>
+                <tr><!--row7-->
+                    <td>Xử lý số liệu với MS Excel</td>
+                    <td>24</td>
+                    <td>40</td>
+                </tr>
+                <tr><!--row8-->
+                    <td>Tạo trang Web với MS FrontPage</td>
+                    <td>9</td>
+                    <td>15</td>
+                </tr>
+                <tr><!--row9-->
+                    <td class="textcenter" rowspan="2">II<br>Kỹ thuật lập trình (VB.net)</td>
+                    <td>Nhập môn lập trình</td>
+                    <td>36</td>
+                    <td>60</td>                
+                </tr>
+                <tr><!--row10-->
+                    <td>Kỹ thuật lập trình</td>
+                    <td>36</td>
+                    <td>60</td>                
+                </tr>
+                <tr><!--row11-->
+                    <td colspan="4">.....</td>                
+                </tr>
+            </table>        
+        </div>    
+    </div>
+</body>
+</html>
