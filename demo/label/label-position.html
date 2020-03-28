@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>label</title>
+        <style>
+            .label {
+                background: url('./hinh2.png') repeat-x;
+                line-height: 267px;
+                float: left;
+                padding: 0 30px;
+                margin-left: 100px;
+                margin-top: 100px;
+                position: relative;
+            }
+            .label::after{
+                content: '';
+                position: absolute;
+                background: url('./hinh3.png') no-repeat;
+                width: 74px;
+                height: 334px;
+                top: -58px;
+                right: -74px;
+            }
+
+            .label::before{
+                content: '';
+                position: absolute;
+                background: url('./hinh1.png') no-repeat;
+                width: 69px;
+                height: 334px;
+                top: 4px;
+                left: -69px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="label">Lop hoc php2003</div>
+    </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGUYỄN NGỌC PHƯỚC THIỆN - HOMEWORK 5</title>
+</head>
+<style>
+    #banner, #left, #center, #right {
+        float: left;
+    }
+
+    #banner {
+        margin-top: 100px;
+        position: relative;
+    }
+
+    #left {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    #center {
+        /* position: relative;
+        height: 257px;
+        top: -4px;
+        left: 67px; */
+        background-image: url('./images/center.jpg');
+        /* vertical-align: middle;
+        text-align: left; */
+        line-height: 257px;
+        float: left;
+    }
+
+    #noidung {
+        position: absolute;
+        top: 30%;
+        left: 15%;
+        color: white;
+        font-size: 50px;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    #right {
+        position: absolute;
+        top: -62px;
+        right: -80px;
+    }
+
+    .full {
+        background-color: dimgray;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+</style>
+
+<body>
+    <div id="banner">
+        <div id="left">
+            <img src="./images/left.jpg" alt="">
+        </div>
+        <div id="center" >
+                LOP PHP2003 Phước Thiện - HW5
+        </div>
+        <div id="right">
+            <img src="./images/right.jpg" alt="">
+        </div>
+
+    </div>
+    <div class="full"></div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+ul#Bigphoto li {
+  display:inline;
+}
+
+#Photo1 {
+  left: 0px;
+  width: 46px;
+  bottom: 50px;
+}
+
+#Photo1::before {
+  content: '.'
+  clear: both;
+  margin-top: 200px;
+}
+
+.Content {
+  padding-top: 100px;
+  float: inline;
+}
+
+</style>
+</head>
+<body>
+
+<div class="Background">  
+<ul id="Bigphoto">
+  <div class="Photo1"></div>
+  <li>
+    <img src="Photo1.jpg" alt="Photo 1">
+    <style height: 40px;></style>
+  </li>
+  <li>
+    <img src="Photo2.jpg" alt="Photo 2">
+  </li>
+  <li>
+    <img src="Photo3.jpg" alt="Photo 3">
+  </li>
+</ul>
+</div>
+<div class="Content">Doan Ngoc Duyen</div>
+
+</body>
+</html>
