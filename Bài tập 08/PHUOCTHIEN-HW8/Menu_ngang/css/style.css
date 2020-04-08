@@ -1,0 +1,60 @@
+#menu {
+    padding-left: 0;
+    display: inline-block
+}
+
+a {
+    text-decoration: none;
+    color: chartreuse;
+}
+a:hover {
+    color: white;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    width: 100%;
+}
+
+#menu>ul>li {
+    background-color: black;
+    position: relative;
+}
+
+#menu>ul>li>ul {
+    display: none;
+}
+
+#menu > ul > li> ul > li> ul {
+    display: none;
+}
+
+#menu>ul>li:hover {
+    background-color: green;
+}
+
+#menu>ul>li:hover>ul {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: blueviolet;
+}
+
+#menu>ul>li>ul>li:hover {
+    background-color: red;
+    position: relative;
+}
+
+#menu>ul>li>ul>li:hover ul {
+    display: inline-block !important;
+    position: absolute !important;
+    top: 0;
+    left: 100%;
+    background-color: olive;
+}
+
+#menu>ul>li>ul>li>ul>li:hover {
+    background-color: gray;
+}

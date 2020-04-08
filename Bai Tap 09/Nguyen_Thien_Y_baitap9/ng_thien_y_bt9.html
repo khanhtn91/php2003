@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>D&M Đầm Bầu Thời Trang</title>
+        <meta charset="utf-8">
+        <style>
+            body{
+                background-color: rgb(177, 204, 255);
+            }
+            .rootcontainer{
+                width: 1003px;
+                height: max-content;
+                margin: auto;
+                background-color: rgb(223, 223, 223);
+                font-family: sans-serif;
+            }
+
+            /*banner*/
+            div#banner{
+                width: 1003px;
+                height: 200px;
+                background-image: url(./img/banner2.jpg);
+                position: relative;
+            }
+            div#banner p{
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size: 20px;
+                color: white;
+                text-shadow: rgba(0, 0, 0, 0.5) 4px 4px 4px;
+                margin: 0px;
+                position: absolute;
+                top: 75px;
+                left: 220px;
+            }
+            #banner ul{
+                margin: 0px;
+                padding: 0px;
+                position: absolute;
+                left: 20px;
+                bottom: 12px;
+            }
+            #banner ul li{
+                display: inline-block;
+                margin-right: 10px;
+            }
+            #banner ul li::before{
+                content: url(./img/banner3.png);
+            }
+            #banner ul li a{
+                text-decoration: none;
+                color: black;
+            }
+
+            /*menu tren va duoi*/
+            .menu{
+                list-style-type: none;
+            }
+            .menu li{
+                display: inline-block;
+            }
+            .menu li:hover{
+                background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.37));
+            }
+            .menu li a{
+                display: block;
+                text-decoration: none;
+                padding: 8.5px 15px;
+            }
+            #menutop{
+                height: 35px;
+                background-image: url(./img/menu_bg.png);
+                background-repeat: repeat-x;
+                margin-top: 3px;
+            }
+            #menutop a{
+                color: white;
+            }
+
+            /*danh muc san pham*/
+            #danhmuc{
+                float: left;
+                width: 215px;
+                height: 759px;
+                background-color: white;
+                background-image: url(./img/header.png);
+                background-repeat: no-repeat;
+                background-position: top 10px left 5px;
+                padding: 5px;
+                margin-bottom: 5px;
+                text-align: center;
+            }
+            #danhmuc h1{
+                font-family: sans-serif;
+                font-size: 16px;
+            }
+            #danhmuc ul{
+                text-align: left;
+                margin-top: 30px;
+                line-height: 2em;
+            }
+            #danhmuc ul ul{
+                margin: initial;
+                padding-left: 20px;
+            }
+            #danhmuc ul ul a{
+                font-weight: initial;
+            }
+            #danhmuc a{
+                display: block;
+                width: 100%;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 16px;
+            }
+            #danhmuc li li:hover{
+                background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(225, 0, 255, 0.37));
+            }
+
+            /*slide*/
+            #slide{
+                float: right;
+                background-image: url(./img/slide.jpg);
+                width: 774px;
+                height: 250px;
+                margin: 0px;
+            }
+
+            /*san pham*/
+            #sanpham{
+                float: right;
+                width: 774px;
+                height: max-content;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                text-align: center;
+            }
+            #sanpham h1{
+                text-align: left;
+                margin-left: 20px;
+                margin-top: 0px;
+            }
+            .item{
+                display: inline-block;
+                width: 200px;
+                height: max-content;
+                background-color: rgb(255, 255, 255);
+                margin-left: 20px;
+                margin-right: 20px;
+                margin-top: 20px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                box-shadow: rgba(0, 0, 0, 0.5) 4px 4px 4px;
+            }
+            .item figure{
+                margin: 0px;
+            }
+            #price{
+                font-weight: bold;
+            }
+            .item::after{
+                content: url(./img/sao.png)"\A""\A"url(./img/mua.png);
+                white-space: pre;
+            }
+
+            /*footer*/
+            footer{
+                clear: both;
+                height: 80px;
+                background-color: white;
+                text-align: center;
+                margin-top: 5px;
+            }
+            #menubottom{
+                height: 35px;
+                text-align: right;
+                text-transform: uppercase;
+                font-size: 15px;
+                font-weight: bold;
+                padding-top: 5px;
+                margin-bottom: 10px;
+            }
+            #menubottom li:hover{
+                background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(174, 0, 255, 0.37));
+            }
+        </style>
+    </head>
+    <body>
+        <div class="rootcontainer">
+            <header>
+                <div id="banner">
+                    <p>Bán Buôn Bán Lẻ Đầm Bầu Thời Trang</p>
+                    <ul>
+                        <li><a href="tel:043.995.4055">Tel: 043.995.4055</a></li>
+                        <li><a href="tel:09.8338.7595">Hương: 09.8338.7595</a></li>
+                        <li><a href="tel:01287.11.2222">Hiền: 01287.11.2222</a></li>
+                    </ul>
+                </div>
+                <nav>
+                    <ul id="menutop" class="menu">
+                        <li><a href="#">Trang Chủ</a></li>
+                        <li><a href="#">Giới Thiệu</a></li>
+                        <li><a href="#">Dịch Vụ</a></li>
+                        <li><a href="#">Sản Phẩm</a></li>
+                        <li><a href="#">Liên Hệ</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <aside id="danhmuc">
+                <h1>DANH MỤC SẢN PHẨM</h1>
+                <ul>
+                    <li>
+                        <a href="#">ÁO LEN</a>
+                        <ul>
+                            <li><a href="#">Áo len cổ lọ</a></li>
+                            <li><a href="#">Áo len cổ tròn</a></li>
+                            <li><a href="#">Áo len cổ thuyền</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">ĐẦM BẦU</a>
+                        <ul>
+                            <li><a href="#">Áo len cổ lọ</a></li>
+                            <li><a href="#">Áo len cổ tròn</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">ĐẦM BẦU</a>
+                        <ul>
+                            <li><a href="#">Áo len cổ lọ</a></li>
+                            <li><a href="#">Áo len cổ tròn</a></li>
+                            <li><a href="#">Áo len cổ thuyền</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+            <section id="slide"></section>
+            <section id="sanpham">
+                <h1>SẢN PHẨM MỚI NHẤT</h1>
+                <div class="item">
+                    <figure>
+                        <img src="./img-products/sp1.jpg">
+                        <figcaption>Áo nỉ cổ lọ tay dài<br>AT1002</figcaption>
+                    </figure>
+                    <p id="price">120.000 đ</p>
+                </div>
+                <div class="item">
+                    <figure>
+                        <img src="./img-products/sp2.jpg">
+                        <figcaption>Áo nỉ cổ lọ tay dài<br>AT1002</figcaption>
+                    </figure>
+                    <p id="price">120.000 đ</p>
+                </div>
+                <div class="item">
+                    <figure>
+                        <img src="./img-products/sp3.jpg">
+                        <figcaption>Áo nỉ cổ lọ tay dài<br>AT1002</figcaption>
+                    </figure>
+                    <p id="price">120.000 đ</p>
+                </div>
+                <div class="item">
+                    <figure>
+                        <img src="./img-products/sp1.jpg">
+                        <figcaption>Áo nỉ cổ lọ tay dài<br>AT1002</figcaption>
+                    </figure>
+                    <p id="price">120.000 đ</p>
+                </div>
+                <div class="item">
+                    <figure>
+                        <img src="./img-products/sp2.jpg">
+                        <figcaption>Áo nỉ cổ lọ tay dài<br>AT1002</figcaption>
+                    </figure>
+                    <p id="price">120.000 đ</p>
+                </div>
+                <div class="item">
+                    <figure>
+                        <img src="./img-products/sp3.jpg">
+                        <figcaption>Áo nỉ cổ lọ tay dài<br>AT1002</figcaption>
+                    </figure>
+                    <p id="price">120.000 đ</p>
+                </div>
+            </section>
+            <footer>
+                <nav>
+                    <ul id="menubottom" class="menu">
+                        <li><a href="#">Liên Hệ</a></li>
+                        <li><a href="#">Dịch Vụ</a></li>
+                        <li><a href="#">Sản Phẩm</a></li>
+                        <li><a href="#">Giới Thiệu</a></li>
+                        <li><a href="#">Trang Chủ</a></li>
+                    </ul>
+                </nav>
+                <small>&copy;2020 Designed by PHP2003</small>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    /* cấp 1 */
+    
+    .menu {
+        background-color: darkgray;
+    }
+    
+    .menu li {
+        list-style: none;
+    }
+    
+    .menu>li {
+        display: inline-block;
+        position: relative;
+        border:1px solid ;
+    }
+    
+    .menu>li>ul>li {
+        position: relative;
+    }
+    
+    .menu a {
+        text-decoration: none;
+        line-height: 50px;
+        padding: 17px;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+    /* ============================= */
+    /* cấp 2 */
+    
+    .menu>li>ul {
+        position: absolute;
+        display: none;
+    }
+    
+    .menu>li>ul {
+        width: 200px;
+    }
+    /* cấp 3 */
+    
+    .menu>li>ul>li>ul {
+        position: absolute;
+        display: none;
+    }
+    
+    .menu>li>ul>li {
+        background-color: #ff0000;
+        border-bottom: 1px dotted #ffffff;
+    }
+
+    .menu>li>ul>li>a {
+        display: block;
+    }
+    
+    .menu>li>ul>li:last-child {
+        border: none;
+    }
+    
+    .menu>li>ul>li>ul {
+        width: 108%;
+    }
+    
+    .menu>li>ul>li>ul>li {
+        background-color: #ff0000;
+        border-bottom: 1px dotted #ffffff;
+    }
+    /*  */
+    /* hover */
+    
+    .menu>li:hover>a {
+        background-color: #ff0000;
+    }
+    
+    .menu>li:hover>ul {
+        display: block;
+    }
+    
+    .menu>li>ul>li:hover>ul {
+        display: block;
+        left: 100%;
+        top: 0%;
+    }
+    
+    .menu li ul li:hover>a {
+        background-color: #800000;
+    }
+</style>
+
+<body>
+    <ul class="menu">
+        <li>
+            <a href="">Trang chủ</a>
+        </li>
+        <li>
+            <a href="">Tin tức</a>
+        </li>
+        <li>
+            <a href="">Sản phẩm</a>
+            <ul>
+                <li>
+                    <a href="">Danh sách SP1 Danh sách SP1</a>
+                </li>
+                <li>
+                    <a href="">Danh sách SP2</a>
+                    <ul>
+                        <li>
+                            <a href="">Danh sách SP2.1 Danh sách SP2.1</a>
+                        </li>
+                        <li>
+                            <a href="">Danh sách SP2.2</a>
+                        </li>
+                        <li>
+                            <a href="">Danh sách SP2.3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Danh sách SP3</a>
+                    <ul>
+                        <li>
+                            <a href="">Danh sách SP3.1</a>
+                        </li>
+                        <li>
+                            <a href="">Danh sách SP3.2</a>
+                        </li>
+                        <li>
+                            <a href="">Danh sách SP3.3</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="">Liên hệ</a>
+        </li>
+        <li>
+            <a href="">Đăng nhập</a>
+        </li>
+    </ul>
+    <div style="padding-left: 50px;">
+        <ol>
+            <li>Tăng độ dài của thẻ ul cấp 2 thì hover thẻ li cấp 2 ko tràn theo</li>
+            <li>Nhiều ký tự bị lệch qua trái</li>
+            <li>width độ dài cho thẻ li thì hover ul ko đúng</li>
+            <li>width độ dài cho thẻ ul thì độ dài li ko tràn viền</li>
+            <li>Bỏ boder cuối cùng cấp 2 ko dk</li>
+        </ol>
+    </div>
+</body>
+
+</html>

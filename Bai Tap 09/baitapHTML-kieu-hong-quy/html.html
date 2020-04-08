@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <style>
+        *{
+            padding:0px;
+            margin:0px;
+        }
+        body{
+            overflow-x: hidden;
+        }
+        .t-center{
+            text-align: center;
+        }
+        .main{
+            box-shadow: 1px 1px 4px 1px #000;
+            max-width: 1000px;
+            margin:0px auto;
+        }
+        .head{
+            position: relative;
+        }
+        .hd-top img{
+            width: 100%;
+        }
+        .hd-main{
+            font-size: 22px;
+            color: #fff;
+            top: 65px;
+            left: 22%;
+            text-transform: capitalize;
+            position: absolute;
+            text-shadow: 1px 1px 4px #000;
+        }
+        .hd-bottom{
+            position: absolute;
+            top:0px;
+        }
+        .hd-bottom div{
+            position:absolute;
+        }
+        .hd-bottom div:nth-child(2){
+            margin-left: 200px;
+        }
+        .hd-bottom div:nth-child(3){
+            margin-left: 400px;
+        }
+        .hd-p{
+            position: absolute;
+            left: 40px;
+            bottom: 17px;
+        }
+        .menu{
+            background:url(menu_bg.png);
+            position: relative;
+        }
+        .menu li{
+            list-style-type:none;
+        }
+        .menu>li:after{
+            content: "";
+            visibility: hidden;
+            width: 100%;
+            height: 2px;
+            background: #fff;
+            position: absolute;
+            top: 30px;
+            transform: scaleX(0);
+            transition: ease 0.6s;
+        }
+        .menu>li:hover:after{
+            visibility: visible;
+            transform: scaleX(1);
+        }
+        .menu>li{
+            position: relative;
+            display: inline-block;
+        }
+        .menu a{
+            color:#fff;
+            padding:10px 20px;
+            display: block;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .menu>li>ul{
+            visibility:hidden;
+            opacity: 0;
+            position: absolute;
+            top:100%;
+            background:url(menu_bg.png);
+            margin-top: 15px;
+            transition: all, 0.6s;
+            z-index: 99;
+        }
+        .menu>li:hover ul{
+            visibility: visible;
+            opacity: 1;
+            margin-top: 0px;
+        }
+        .s-main{
+            background:#ccc;
+            display: flex;
+            justify-content: space-between;
+            padding:10px 10px 20px;
+        }
+        .ml-top{
+            color:blue;
+            font-weight: 800;
+            text-transform:uppercase;
+            text-align: center;
+            background: url(header.png);
+            height: 45px;
+            width: 207px;
+            line-height: 30px;
+        }
+        .m-left{
+            box-shadow: 1px 1px 4px 1px #000;
+            background: #fff;
+            padding:0px 10px;
+        }
+        .ml-bottom ul{
+            margin-left: 35px;
+            position: relative;    
+        }
+        .ml-bottom li{
+            padding:10px 0px;
+        }
+        .ml-bottom>ul>li>a{
+            display: block;
+            color:blue;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .ml-bottom>ul>li>ul>li>a{
+            color:blue;      
+        }
+        .ml-bottom a:hover{
+            color:red;
+            cursor: pointer;
+        }
+        .m-right{
+            margin-left:10px;
+        }
+        .mr-top img{
+            width: 100%;
+        }
+        .mb-td{
+            color:blue;
+            font-size: 20px;
+            text-transform: uppercase;
+            font-weight:800;
+            padding:10px 20px;
+        }
+        .product{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .m-product{
+            cursor: pointer;
+            box-sizing: border-box;
+            width: calc(92% / 3);
+            background: #fff;
+            margin: 10px;
+            margin-bottom: 0px;
+            padding: 10px;
+            text-align: center;
+        }
+        .m-product:nth-child(n) p{
+            padding:5px 0px;
+        }
+        .m-product:nth-child(n) img{
+            padding:5px 0px;
+        }
+        .m-product:nth-child(3n){
+            margin-right: 0px;
+        }
+        .m-product img:hover{
+            transform: scale(0.9);
+            transition: all 0.6s;
+        }
+        .price{
+            font-weight: 700;
+        }
+        .footer{
+            background: #fff;
+            padding:10px 0px 20px;
+        }
+        .f-top ul{
+            text-align:right;
+            position: relative;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .f-top ul li{
+            list-style-type: none;
+            padding:10px;
+        }
+        .f-top ul li a{
+            color:blue;
+            font-weight: 700;
+            text-transform: uppercase;
+            display: block;
+        }
+        .f-top ul li a:hover{
+            color:red;
+            cursor: pointer;
+        }
+        .f-top::after{
+            display: block;
+            content:"";
+            clear: both;
+        }
+        .f-bottom{
+            text-align: center;
+            font-weight: 800;
+        }
+        .f-bottom span{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <section class="main">
+        <header class="head">
+            <div class="hd-top"><img src="hd1.jpg"></div>
+            <div class="hd-main">bán buôn bán lẻ đầm bầu thời trang</div>
+            <div class="hd-bottom">
+                <div><img src="hd2.png"><p class="hd-p">Tel: 0867.453.994</p></div>
+                <div><img src="hd2.png"><p class="hd-p">Hương: 0867.453.994</p></div>
+                <div><img src="hd2.png"><p class="hd-p">Hiền: 0867.453.994</p></div>
+            </div>
+        </header>
+        <nav>
+            <ul class="menu">
+                <li><a>Trang chủ</a></li>
+                <li><a>Giới thiệu</a></li>
+                <li><a>Dịch vụ</a></li>
+                <li>
+                    <a>Sản phẩm</a>
+                    <ul>
+                        <li><a>Áo Len</a></li>
+                        <li><a>Đầm Bầu</a></li>
+                    </ul>
+                </li>
+                <li><a>Liên hệ</a></li>
+            </ul>
+        </nav>
+        <section class="s-main">
+            <div class="m-left">
+                <div class="ml-top">
+                    <p>Danh Mục Sản Phẩm</p>
+                </div> 
+                <div class="ml-bottom">
+                    <ul>
+                        <li>
+                            <a>Áo Len</a>
+                            <ul>
+                                <li><a>Đầm Bầu 1</a></li>
+                                <li><a>Đầm Bầu 2 </a></li>
+                                <li><a>Đầm Bầu 3</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>Đầm Bầu</a>
+                            <ul>
+                                <li><a>Đầm Bầu 6</a></li>
+                                <li><a>Đầm Bầu 4 </a></li>
+                                <li><a>Đầm Bầu 5</a></li>
+                            </ul>
+                        </li>
+                        <li><a>Đầm Bầu</a></li>
+                        <li><a>Đầm Bầu</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="m-right">
+                <div class="mr-top"><img src="slide.jpg"></div>
+                <div class="mr-bottom">
+                    <p class="mb-td">Sản phẩm Mới nhất</p>
+                    <div class="product">
+                        <div class="m-product">
+                            <img src="sp1.jpg">
+                            <p>Áo nỉ cổ lọ tay dài - AT10002</p>
+                            <p class="price">120.000 đ</p>
+                            <img src="sao.png">
+                            <br>
+                            <img src="mua.png">
+                        </div>
+                        <div class="m-product">
+                            <img src="sp2.jpg">
+                            <p>Áo nỉ cổ lọ tay dài - AT10002</p>
+                            <p class="price">120.000 đ</p>
+                            <img src="sao.png">
+                            <br>
+                            <img src="mua.png">
+                        </div>
+                        <div class="m-product">
+                            <img src="sp3.jpg">
+                            <p>Áo nỉ cổ lọ tay dài - AT10002</p>
+                            <p class="price">120.000 đ</p>
+                            <img src="sao.png">
+                            <br>
+                            <img src="mua.png">
+                        </div>
+                        <div class="m-product">
+                            <img src="sp1.jpg">
+                            <p>Áo nỉ cổ lọ tay dài - AT10002</p>
+                            <p class="price">120.000 đ</p>
+                            <img src="sao.png">
+                            <br>
+                            <img src="mua.png">
+                        </div>
+                        <div class="m-product">
+                            <img src="sp2.jpg">
+                            <p>Áo nỉ cổ lọ tay dài - AT10002</p>
+                            <p class="price">120.000 đ</p>
+                            <img src="sao.png">
+                            <br>
+                            <img src="mua.png">
+                        </div>
+                        <div class="m-product">
+                            <img src="sp3.jpg">
+                            <p>Áo nỉ cổ lọ tay dài - AT10002</p>
+                            <p class="price">120.000 đ</p>
+                            <img src="sao.png">
+                            <br>
+                            <img src="mua.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="f-top">
+                <ul>
+                    <li><a>Liên hệ</a></li>
+                    <li><a>Sản phẩm</a></li>
+                    <li><a>Dịch vụ</a></li>
+                    <li><a>Giới thiệu</a></li>
+                    <li><a>Trang chủ</a></li>
+                </ul>
+            </div>
+            <div class="f-bottom">&copy; 2014 Designed by Web Designer <span>PHP 2003</span></div>
+        </footer>
+    </section>
+</body>
+</html>

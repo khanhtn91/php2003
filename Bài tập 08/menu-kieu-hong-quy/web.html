@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style>
+	.hinh{
+		height: 257px;
+		width: 200px;
+		margin-left: 100px;
+		margin-top: 70px;
+		position: relative;
+		background-image:url(hinh2.jpg);
+	}
+	.hinh::before{
+		top: 4px;
+		height: 306px;
+		position: absolute;
+		content: "";
+		background-image: url(hinh1.jpg);
+		width: 69px;
+		margin-left: -69px;
+	}
+	.hinh::after{
+		top: -58px;
+		height: 316px;
+		position: absolute;
+		content: "";
+		background-image: url(hinh3.jpg);
+		width: 74px;
+		margin-left: 65px;
+	}
+</style>
+</head>
+<body>
+<div class="hinh">
+	PHP Kiều Hồng Quý
+</div>
+</body>
+</html>

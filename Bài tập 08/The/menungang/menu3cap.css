@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	font-size:24px;
+	font-family:"Times New Roman", Times, serif;
+}
+/*build class clearfix để giải quyết float*/
+.clearfix:before, .clearfix:after{
+	clear:both;
+	content:'';
+
+}
+#menu{
+	width:1200px;
+	margin:100px auto;
+}
+ul{
+	list-style-type:none;
+}
+a{
+	text-decoration:none;
+}
+ul.menu{
+	background:#0FF;
+	text-align:center;
+	height:50px;
+}
+ul.menu >li{
+	float:left;
+	position:relative;
+}
+ul.menu >li >a{
+	display:block;
+	padding:10px 15px;
+	color:#F00;
+	border-right:#000 1px solid;
+	line-height: 30px;
+}
+ul.menu li a:hover{
+	background:#9F0;
+}
+ul.menu ul{
+	position:absolute;
+	top:100%;
+	left:0;
+	min-width:200px;
+	background:#0FF;
+	visibility:hidden;
+	display:none;
+	transition: all 0.5s;
+}
+ul.menu ul li a{
+	display:block;
+	padding:5px 0px;
+	border-bottom:1px solid #FFF;
+}
+ul.menu ul li a:after{
+	content:'\f054';
+	position:absolute;
+	right:15px;
+}
+ul.menu ul.menucon ul{
+	top:25%;
+	left:100%;
+}
+ul.menu li:hover > ul{
+	visibility:visible;
+	display:block;
+}
+
+
+

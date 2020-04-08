@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENU</title>
+</head>
+<style>
+    body {
+        margin: 0;
+    }
+    
+    .menu {
+        margin: 0;
+        padding: 0;
+        background-color: darkgray;
+    }
+    
+    .menu>li {
+        float: left;
+        position: relative;
+    }
+    
+    .menu>li>ul>li {
+        position: relative;
+    }
+    
+    .menu>li>ul>li>ul>li {
+        position: relative;
+    }
+    
+    .menu>li>a {
+        border-right: 1px solid #000000;
+    }
+    
+    .menu>li:last-child>a {
+        border: 0;
+    }
+    
+    .menu li {
+        list-style: none;
+    }
+    
+    .menu li a {
+        padding: 15px;
+        display: block;
+        text-decoration: none;
+        color: #ffffff;
+    }
+    
+    .menu>li:hover>a {
+        background-color: darkgreen;
+        color: #ffffff;
+    }
+    
+    .menu>li>ul {
+        padding: 0;
+        position: absolute;
+        display: none;
+    }
+    
+    .menu>li>ul>li>ul {
+        padding: 0;
+        position: absolute;
+        display: none;
+    }
+    
+    .menu>li>ul>li>ul>li>ul {
+        padding: 0;
+        background-color: darkred;
+        position: absolute;
+        display: none;
+    }
+    
+    .menu>li:hover>ul {
+        background-color: darkseagreen;
+        display: block;
+        width: 265%;
+    }
+    
+    .menu>li>ul>li:hover>ul {
+        background-color: blueviolet;
+        display: block;
+        top: 0;
+        left: 100%;
+        width: 100%;
+    }
+    
+    .menu>li>ul>li>ul>li:hover>ul {
+        background-color: gold;
+        display: block;
+        top: 0;
+        left: 100%;
+        width: 100%;
+    }
+    
+    .menu li ul li:hover>a {
+        background-color: darkslategray;
+        color: darkorange;
+    }
+    
+    .clear::after {
+        content: '';
+        clear: both;
+        display: block;
+    }
+</style>
+
+<body>
+    <ul class="menu clear">
+        <li>
+            <a href="">Trang chủ</a>
+        </li>
+        <li>
+            <a href="">Tin tức</a>
+        </li>
+        <li>
+            <a href="">Sản phẩm</a>
+            <ul>
+                <li>
+                    <a href="">Nokia</a>
+                    <ul>
+                        <li>
+                            <a href="">Sản phẩm NK 1</a>
+                        </li>
+                        <li>
+                            <a href="">Sản phẩm NK 2</a>
+                            <ul>
+                                <li>
+                                    <a href="">Sản phẩm NK 2.1</a>
+                                </li>
+                                <li>
+                                    <a href="">Sản phẩm NK 2.2</a>
+                                </li>
+                                <li>
+                                    <a href="">Sản phẩm NK 2.3</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">Sản phẩm NK 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Huawai </a>
+                </li>
+                <li>
+                    <a href="">Sam Sung</a>
+                    <ul>
+                        <li>
+                            <a href="">Sản phẩm SS 1</a>
+                        </li>
+                        <li>
+                            <a href="">Sản phẩm SS 2</a>
+                        </li>
+                        <li>
+                            <a href="">Sản phẩm SS 3</a>
+                            <ul>
+                                <li>
+                                    <a href="">Sản phẩm SS 3.1</a>
+                                </li>
+                                <li>
+                                    <a href="">Sản phẩm SS 3.2</a>
+                                </li>
+                                <li>
+                                    <a href="">Sản phẩm SS 3.3</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="">Tư vấn</a>
+        </li>
+        <li>
+            <a href="">Liên hệ</a>
+        </li>
+        <li>
+            <a href="">Tra cứu</a>
+        </li>
+    </ul>
+
+    <ul>
+        <li>
+            <ul>
+                <li></li>
+            </ul>
+        </li>
+    </ul>
+    <div>ádfghjk</div>
+</body>
+
+</html>

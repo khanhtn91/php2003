@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin:0px;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    color: rgb(46, 46, 46);
+    line-height: 1.254;
+}
+a {
+    text-decoration: none;
+}
+/*==CHIA CỘT==*/
+#container {
+    position: relative;
+    width:1005px;
+    background-color:rgb(189, 185, 185);
+    margin:auto;
+    border: #333 solid 1px;
+}
+#header {
+    background-image: url("image/banner/Image 1 at frame 0.jpg");
+    background-position: center center;
+    width:1003px;
+    height: 200px;
+    border-bottom:#333 solid 1px;
+}
+#nav {
+    background-image: url("image/menu_bg.png");
+    width:1003px;
+    height:35px;
+    margin-top:5px;
+}
+#leftnav {
+    float:left;
+    background-color: white;
+    background-image:url("image/header.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    width:220px;
+    height:663px;
+    margin-top: 6px;
+}
+#footer {
+    background-color:white;
+    width:1003px;
+    height:100px;
+    clear:both;
+}
+/*==HEADER==*/
+#header>p {
+    color: white;
+    font-weight: bold;
+    padding: 70px 255px;
+}
+.contact>p {
+    float: left;
+    margin-right: 10px;
+    padding-left:33px;
+    padding-top:8px;
+}
+/*==NAV==*/
+#nav li {
+    float:left;
+    padding: 7.5px 30px;
+    list-style-type: none;
+    display: inline-block;
+}
+#nav li a {
+    color:white;
+}
+/*==LEFTNAV==*/
+#leftnav>p {
+    text-align: center;
+    margin:10px;
+    color:rgb(6, 133, 172);
+    font-weight: bold;
+}
+#leftnav>ul {
+    list-style: square;
+}
+#leftnav li {
+    line-height: 35px;
+}
+#leftnav li a {
+    color:rgb(6, 133, 172);
+    font-size: 14px;
+}
+/*==CONTENT==*/
+##content {
+    padding: 1em 8em;
+}
+.content-image>img {
+    margin-top:6.5px;
+    margin-left:9px;
+}
+#content>p {
+    margin:5px 228px;
+    color:rgb(5, 1, 61);
+    font-weight: bold;
+}
+.product-list {
+    overflow: hidden;
+    padding: 8px 40px;
+}
+.product-list .list {
+    float:left;
+    width:30.33333%;
+    margin-right: 20px;
+}
+#box {
+    background-color: white;
+    text-align: center;
+    font-size: 15px;
+    padding: 5px 8px;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+/*==FOOTER==*/
+.navfooter li {
+    float: right;
+    list-style: none;
+    display: block;
+    padding: 15px 20px;
+}
+.navfooter li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color:rgb(4, 15, 168);
+    font-weight:bold;
+}
+.navfooter a:hover {
+    color:red;
+}
+#footer>p {
+    padding-top:20px;
+    text-align: center;
+    clear:right;
+}
+.change-color {
+    color:rgb(163, 23, 163);
+}

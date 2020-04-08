@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    body{
+        font-size: 18px;
+        font-family: sans-serif;
+    }
+    .menu1{
+        width: 250px;
+        background-color: blanchedalmond;  
+    }
+    .menu1 li{
+        list-style: none;
+        text-indent: 15px;
+        line-height: 50px;  
+    }
+    .menu1 li a{
+        text-decoration: none;
+        color: black;
+        display: block;
+    }
+   .menu1 >li:hover > a {
+       background-color: red;
+       color: seagreen;
+   }
+   .sub-menu {
+       display: none;
+   }
+   .menu1 >li:hover .sub-menu {
+       display: block;  
+   }
+   .sub-menu >li>a {
+       background :  darkcyan;
+   }
+   .menu1 >li .sub-menu a:hover{
+       background-color: cornflowerblue;
+       color: darkblue;   
+   }
+
+    
+</style>
+<body>
+   <div>
+       <ul class="menu1">
+           <li><a href="#">Lap Top & Macbook</a>
+            <ul class="sub-menu" >
+                <li><a href="#">Điện máy - điện dân dụng</a></li>
+                <li><a href="#">Điện máy - điện dân dụng</a></li>
+                <li><a href="#">Điện máy - điện dân dụng</a></li>
+                <li><a href="#">Điện máy - điện dân dụng</a></li>
+                <li><a href="#">Điện máy - điện dân dụng</a></li>  
+            </ul>		
+           </li>
+           <li><a href="#">Điện Máy-Điện Dân Dụng</a></li>
+           <li><a href="#">PC-Máy tính đồng bộ</a></li>
+           <li><a href="#">lap top mac book</a></li>
+           <li><a href="#">lap top mac book</a>
+            <ul class="sub-menu" >
+                <li><a href="#">Điện máy - điện dân dụng</a></li>
+                <li><a href="#">Điện máy - điện dân dụng</a></li>
+                <li><a href="#">Điện máy - điện dân dụng</a></li>
+                <li><a href="#">Điện máy - điện dân dụng</a></li>
+                <li><a href="#">Điện máy - điện dân dụng</a></li>  
+            </ul>		
+           </li>
+           <li><a href="#">lap top mac book</a></li>
+       </ul>
+   </div>
+    
+</body>
+</html>

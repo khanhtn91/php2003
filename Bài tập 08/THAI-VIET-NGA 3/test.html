@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .menu {
+        background-color: fuchsia;
+    }
+    
+    .menu li {
+        position: relative;
+        list-style: none;
+        display: inline-block;
+        line-height: 71px;
+    }
+    
+    .menu a {
+        padding: 7px 10px;
+        text-transform: uppercase;
+    }
+    
+    .menu li ul {
+        display: none;
+        position: absolute;
+        top: 30px;
+        left: 0;
+        visibility: hidden;
+        z-index: 10000000;
+        min-width: 200px;
+        background: #d81921;
+    }
+    
+    .menu li ul li {
+        width: 100%;
+        line-height: 20px;
+        padding: 5px;
+        border-bottom: 1px dotted #fff;
+    }
+    
+    .menu li:hover ul {
+        display: block;
+        top: 71px;
+        visibility: visible;
+        line-height: 0px;
+    }
+</style>
+
+<body>
+    <ul class="menu">
+        <li>
+            <a href="">Trang chủ</a>
+        </li>
+        <li>
+            <a href="">Sản phẩm</a>
+            <ul>
+                <li>
+                    <a href="">Danh sách SP1</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="">Tin tức</a>
+        </li>
+    </ul>
+</body>
+
+</html>

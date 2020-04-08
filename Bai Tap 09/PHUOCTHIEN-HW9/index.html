@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGUYỄN NGỌC PHƯỚC THIỆN</title>
+</head>
+<style>
+    body {
+        background-color: gray;
+    }
+
+    #wrapper {
+        width: 1003px;
+        margin: auto;
+        background-color: #ffffff;
+    }
+
+    #header_bg {
+        background: url("./images/bg_header.jpg") no-repeat;
+        height: 200px;
+        width: auto;
+        margin: auto;
+    }
+    #main_menu {
+        background-image: url('./images/menu_bg.png');
+        background-repeat: repeat-x;
+    }
+
+    #main_menu > li {
+        list-style-type: none;
+        display: inline-block;
+        line-height: 35px;
+        margin: auto 20px
+        
+    }
+
+
+
+    #main_menu > li > a  {
+        text-decoration: none;
+        color: white;
+    }
+
+    #main_menu > li:hover > a  {
+        color: darkorchid;
+    }
+    .active > a{
+        color: rgb(255, 123, 0) !important;
+    }
+
+    #left_panel {
+        float: left;
+    }
+
+    #danhmucsp {
+        
+        width: 250px;
+        top: 50px;
+        background-color: white;
+        color: blue;
+        text-align: center;
+        position: relative;
+    }
+
+    #content
+    {
+        background-color: white;
+        width: fit-content;
+        height: 1500px;
+    }
+
+    #danhmucsp::after {
+        content: "";
+        position: absolute;
+        background-image: url("./images/header.png");
+        background-position: bottom left;
+        width: 207px;
+        height: 20px;
+        top: 100%;
+        left: 0;
+        margin-left: 20px;
+    }
+
+    #li_sanpham {
+        margin-top: 100px;
+    }
+
+    #li_sanpham>ul>li>a {
+        text-decoration: none;
+        color: rgb(0, 72, 75);
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    #li_sanpham>ul>li>ul>li>a {
+        text-decoration: none;
+        color: cadetblue;
+    }
+
+    
+    #li_sanpham > ul {
+        list-style: square;
+    }
+
+    #right_panel {
+        float: right;
+        top: 0;
+        width: 750px;
+    }
+
+    #latest_products {
+        text-transform: uppercase;
+        font-size: 30px;
+        color: darkslategray;
+    }
+
+    #sanpham {
+        margin: 0 auto;
+    }
+
+    .moisanpham {
+        padding: 0 5px;
+        text-align: center;
+        display: inline-block;
+        margin: 10px;
+        -webkit-box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.24);
+        -moz-box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.24);
+        box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.24);
+    }
+
+    #mainfooter>ul {
+        list-style: none;
+    }
+
+    #mainfooter {
+        display: block;
+        overflow: hidden;
+        float: right;
+        background-color: white;
+        width: 100%;
+    }
+
+    #mainfooter li{
+        float: right;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    #mainfooter li a{
+        display: block;
+        overflow: hidden;
+        text-decoration: none;
+        margin-left: 15px;
+        margin-right: 15px;
+        color: darkcyan;
+    }
+
+    #copyright {
+        text-align: center;
+        margin: 30px auto;
+    }
+
+
+</style>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <div id="header_bg">
+            </div>
+        </header>
+        <nav>
+        <!-- Menu -->
+            <div id="main_menu">
+                <li class="active">
+                    <a href="#">Trang chủ</a>
+                </li>
+                <li>
+                    <a href="#">Giới thiệu</a>
+                </li>
+                <li>
+                    <a href="#">Dịch vụ</a>
+                </li>
+                <li>
+                    <a href="#">Sản phẩm</a>
+                </li>
+                <li>
+                    <a href="#">Liên hệ</a>
+                </li>
+            </div>
+        <!-- /Menu -->
+        </nav>
+        <div id="content">
+            <div id="left_panel">
+                <div id="danhmucsp">
+                    Danh mục sản phẩm
+                </div>
+                <div id="li_sanpham">
+                    <ul>
+                        <li>
+                            <a href="#">ÁO LEN</a> 
+                            <ul>
+                                <li>
+                                    <a href="#">Áo len cổ lọ</a> 
+                                </li>
+                                <li>
+                                    <a href="#">Áo len cổ tròn</a> 
+                                </li>
+                                <li>
+                                    <a href="#">Áo len cổ thuyền</a> 
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#">ĐẦM BẦU</a> 
+                            <ul>
+                                <li>
+                                    <a href="#">Áo len cổ lọ</a> 
+                                </li>
+                                <li>
+                                    <a href="#">Áo len cổ tròn</a> 
+                                </li>
+                                <li>
+                                    <a href="#">Áo len cổ thuyền</a> 
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#">ĐẦM SUÔNG</a> 
+                            <ul>
+                                <li>
+                                    <a href="#">Áo len cổ lọ</a> 
+                                </li>
+                                <li>
+                                    <a href="#">Áo len cổ tròn</a> 
+                                </li>
+                                <li>
+                                    <a href="#">Áo len cổ thuyền</a> 
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#">ĐẦM BẦU</a> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="right_panel">
+                <img src="./images/slide.jpg" width="100%" alt="">
+                <div id="latest_products">
+                    Sản phẩm mới nhất
+                </div>
+                <div class="sanpham">
+                    <div class="moisanpham">
+                        <img src="./images/sp1.jpg" alt="" srcset="">
+                        <p>
+                            <span>Áo nỉ cổ lọ tay dài - AT00001</span>
+                        </p>
+                        <img src="./images/sao.png" alt="" srcset="">
+                        <p>
+                            <span>120.000đ</span>
+                        </p>
+                        <img src="./images/mua.png" alt="" srcset="">
+                    </div>
+                    <div class="moisanpham">
+                        <img src="./images/sp1.jpg" alt="" srcset="">
+                        <p>
+                            <span>Áo nỉ cổ lọ tay dài - AT00001</span>
+                        </p>
+                        <img src="./images/sao.png" alt="" srcset="">
+                        <p>
+                            <span>120.000đ</span>
+                        </p>
+                        <img src="./images/mua.png" alt="" srcset="">
+                    </div>
+                    <div class="moisanpham">
+                        <img src="./images/sp1.jpg" alt="" srcset="">
+                        <p>
+                            <span>Áo nỉ cổ lọ tay dài - AT00001</span>
+                        </p>
+                        <img src="./images/sao.png" alt="" srcset="">
+                        <p>
+                            <span>120.000đ</span>
+                        </p>
+                        <img src="./images/mua.png" alt="" srcset="">
+                    </div>
+                    <div class="moisanpham">
+                        <img src="./images/sp1.jpg" alt="" srcset="">
+                        <p>
+                            <span>Áo nỉ cổ lọ tay dài - AT00001</span>
+                        </p>
+                        <img src="./images/sao.png" alt="" srcset="">
+                        <p>
+                            <span>120.000đ</span>
+                        </p>
+                        <img src="./images/mua.png" alt="" srcset="">
+                    </div>
+                    <div class="moisanpham">
+                        <img src="./images/sp1.jpg" alt="" srcset="">
+                        <p>
+                            <span>Áo nỉ cổ lọ tay dài - AT00001</span>
+                        </p>
+                        <img src="./images/sao.png" alt="" srcset="">
+                        <p>
+                            <span>120.000đ</span>
+                        </p>
+                        <img src="./images/mua.png" alt="" srcset="">
+                    </div>
+                    <div class="moisanpham">
+                        <img src="./images/sp1.jpg" alt="" srcset="">
+                        <p>
+                            <span>Áo nỉ cổ lọ tay dài - AT00001</span>
+                        </p>
+                        <img src="./images/sao.png" alt="" srcset="">
+                        <p>
+                            <span>120.000đ</span>
+                        </p>
+                        <img src="./images/mua.png" alt="" srcset="">
+                    </div>
+                    <div class="moisanpham">
+                        <img src="./images/sp1.jpg" alt="" srcset="">
+                        <p>
+                            <span>Áo nỉ cổ lọ tay dài - AT00001</span>
+                        </p>
+                        <img src="./images/sao.png" alt="" srcset="">
+                        <p>
+                            <span>120.000đ</span>
+                        </p>
+                        <img src="./images/mua.png" alt="" srcset="">
+                    </div>
+                    <div class="moisanpham">
+                        <img src="./images/sp1.jpg" alt="" srcset="">
+                        <p>
+                            <span>Áo nỉ cổ lọ tay dài - AT00001</span>
+                        </p>
+                        <img src="./images/sao.png" alt="" srcset="">
+                        <p>
+                            <span>120.000đ</span>
+                        </p>
+                        <img src="./images/mua.png" alt="" srcset="">
+                    </div>
+                    <div class="moisanpham">
+                        <img src="./images/sp1.jpg" alt="" srcset="">
+                        <p>
+                            <span>Áo nỉ cổ lọ tay dài - AT00001</span>
+                        </p>
+                        <img src="./images/sao.png" alt="" srcset="">
+                        <p>
+                            <span>120.000đ</span>
+                        </p>
+                        <img src="./images/mua.png" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+
+    
+
+
+    </div>
+    <footer>
+        <div id="mainfooter">
+            <ul>
+                <li>
+                    <a href="#">Liên hệ</a>
+                </li>
+                <li>
+                    <a href="#">Giới thiệu</a>
+                </li>
+                <li>
+                    <a href="#">Liên hệ</a>
+                </li>
+                <li>
+                    <a href="#">Liên hệ</a>
+                </li>
+            </ul>
+        </div>
+        <div id="copyright">
+            © 2019 Nguyen Ngoc Phuoc Thien
+        </div>
+    </footer>
+
+</body>
+
+</html>

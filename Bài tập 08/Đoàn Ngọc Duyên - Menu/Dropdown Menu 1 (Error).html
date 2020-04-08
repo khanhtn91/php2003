@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Duyen - Menu 1 (Error)</title>
+<style>
+body {
+    margin: 0;
+    background: pink;        
+}
+
+nav {
+    width: 100%;
+    margin-top: 100px;
+    font-size: 15px;
+    font-family: Helvetica;
+}
+
+ul {
+    margin: 0 auto;
+    float: left;
+    background: linear-gradient (#b22222,#8b0000);
+    background: -moz-linear-gradient(#b22222,#8b0000);
+    background: -webkit-linear-gradient(#b22222,#8b0000);
+    width: 100%;
+}
+
+ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+    display: inline;
+    position: relative;
+}
+
+ul li a {
+    border-right: 1px dotted #fff;
+    padding: 13px 25px;
+    color: #fff;
+    text-decoration: none;
+    display:inline-block;
+    background: linear-gradient (#b22222,#8b0000);
+    background: -moz-linear-gradient(#b22222,#8b0000);
+    background: -webkit-linear-gradient(#b22222,#8b0000);
+}
+
+ul li a:hover {
+    background: linear-gradient(#006400,#228b22);
+    background: -moz-linear-gradient(#006400,#228b22);
+    background: -webkit-linear-gradient(#006400,#228b22);
+}
+
+ul li:hover> ul {
+    visibility: visible;
+}
+
+ul ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+    position: absolute;
+    width: 180px;
+    border-top: 1px solid #fff;
+}
+
+ul ul li a {
+    padding: 9px 15px;
+    color: #fff;
+    text-decoration: none;
+    display:inline-block
+    float:left;
+    width:150px;
+    border-bottom: 1px dotted #fff;
+}
+
+/* Thầy ơi, em không hiểu sao chỗ này float bị chuyển sang màu trắng,
+và code cũng không chạy được luôn :(. Phần này có lẽ em bị lỗi về display và hover,
+nên Menu không hiện các cấp khi rê chuột vào ạ. */
+
+</style>
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="#"> Home</a></li>
+        <li><a href="#"> Appertizer</a></li>
+        <li><a href="#"> Soup &raquo;</a></li>
+            <ul>
+                <li><a href="#"> Soup 1</a></li>
+                <li><a href="#"> Soup 2</a></li>
+                <li><a href="#"> Soup 3</a></li>
+                <li><a href="#"> Soup 4</a></li>
+                <li><a href="#"> Soup 5</a></li>
+                <li><a href="#"> More &raquo;</a>
+                    <ul>
+                        <li><a href="#"> Broth 1</a></li>
+                        <li><a href="#"> Broth 2</a></li>
+                        <li><a href="#"> Broth 3</a></li>
+                        <li><a href="#"> Broth 4</a></li>
+                        <li><a href="#"> Broth 5</a></li>
+                    </ul>
+                </li>
+            </ul>
+        <li><a href="#"> Salad</a></li>
+        <li><a href="#"> Main-course</a></li>
+        <li><a href="#"> Dessert</a></li>
+    </ul>
+</nav>
+</body>
+</html>

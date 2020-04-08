@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                margin: 0px;
+            }
+            .menu {
+                background-color:lightblue;
+                list-style-type: none;
+                float: left;
+                margin: 0px;
+                padding: 0px;
+            }
+            .menu>li>a {
+                display: block;
+                color: rebeccapurple;
+                text-decoration: none;
+                padding: 10px 20px;
+            }
+            .menu>li>a:hover {
+                background-color: violet;
+                font-weight: bold;
+                color: white;
+            }
+            .menu li {
+                position: relative;
+                list-style-type: none;
+            }
+            .menu .subcontactmenu{
+                display: none;
+                position: absolute;
+                list-style-type: none;
+                top: 0;
+                left: 100%;
+                width: 150px;
+                padding: 0;
+            }
+            .menu .subcontactmenu a {
+                display: block;
+                color:rebeccapurple;
+                text-decoration: none;
+                padding: 10px 20px;
+            }
+            .menu li:hover>.subcontactmenu{
+                background-color: lightblue;
+                list-style-type: none;
+                display: block;
+            }  
+            .subcontactmenu>li>a:hover{
+                background-color: violet;
+                font-weight: bold;
+                color: white;
+            }            
+        </style>
+    </head>
+    <body>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">About Us</a></li>
+            <li>
+                <a href="#">Contact</a>
+                <ul class="subcontactmenu">
+                    <li><a href="#">Contact Form A</a></li>
+                    <li><a href="#">Contact Form B</a></li>
+                    <li><a href="#">Contact Form C</a></li>
+                </ul>
+            </li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+    </body>
+</html>

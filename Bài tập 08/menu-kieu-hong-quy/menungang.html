@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style>
+    body{
+        background: #ccc;
+    }
+    .f-size{
+        font-size:14px;
+    }
+    .w-600{
+        width: 600px;
+    }
+    .clear{
+        clear: both;
+    }
+    .f-left{
+        float:left;
+        padding:10px 0px 0px 0px;
+    }
+    #menu{
+        background:#fff;
+        width:230px;
+        position: relative;
+    }
+    #menu li a{
+        text-decoration:none;
+    }
+    #menu>li{
+        list-style-type:none;
+        padding: 10px;
+    }
+    #menu>li>a{
+        position: relative;
+        color:#333;
+        text-decoration:none;
+        padding:10px;
+        line-height:20px;
+    }
+    #menu>li::after{
+        content: "";
+        position: absolute;
+        left: 100%;
+        border-top: 10px solid transparent;
+        border-left: 20px solid #2b3278;
+        border-bottom: 10px solid transparent;
+        visibility:hidden;
+        z-index: 9;
+    }
+    #menu>li:hover::after{
+        visibility:visible;
+    }
+    #menu>li:hover{
+        background:#2b3278;
+    }
+    #menu>li:hover>a{
+        color:#fff;
+    }
+    #menu>li>div{
+        display:none;
+        border-left: 10px solid #000;
+        left: 100%;
+        padding: 0px;
+        width: 800px;
+        background: #fff;
+        top: 0px;
+        bottom: 0px;
+        position: absolute;
+    }
+    #menu>li:hover>div{
+        display:block;
+    }
+    .f-left:first-child {
+        padding-left:10px;
+        width:140px;
+        text-align:right;
+    }
+    .menu-1{
+        padding:0px;
+    }
+    .menu-1>li{
+        padding: 0px 0px 10px 10px;
+        display:inline-block;
+    }
+    .menu-1>li>a{
+        font-size:13px;
+        color: #111;
+    }
+    .menu-1>li:hover{
+        font-weight:700;
+    }
+    
+</style>
+</head>
+<body>
+    <ul id="menu">
+        <li>
+            <a href="#">Laptop & Macbook</a>
+            <div>
+                <div class="clear">
+                    <div class="f-left"><a href="#" class="f-size">Tivi - Màn hình TV</a> |</div>
+                    <div class="f-left w-600">
+                        <ul class="menu-1">
+                            <li><a href="#">Điện máy - điện dân dụng</a> |</li>
+                            <li><a href="#">PC - Máy tính đồng bộ</a> |</li>
+                            <li><a href="#">Laptop & Macbook</a> |</li>
+                            <li><a href="#">Tivi - Màn hình TV</a> |</li>
+                            <li><a href="#">Điện máy - điện dân dụng</a> |</li>
+                            <li><a href="#">PC - Máy tính đồng bộ</a> |</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clear">
+                    <div class="f-left"><a href="#" class="f-size">Tivi - Màn hình TV1</a> |</div>
+                    <div class="f-left w-600">
+                        <ul class="menu-1">
+                            <li><a href="#">Điện máy - điện dân dụng 1</a> |</li>
+                            <li><a href="#">PC - Máy tính đồng bộ 1</a> |</li>
+                            <li><a href="#">Laptop & Macbook 1</a> |</li>
+                            <li><a href="#">Tivi - Màn hình TV 1</a> |</li>
+                            <li><a href="#">Điện máy - điện dân dụng 1</a> |</li>
+                            <li><a href="#">PC - Máy tính đồng bộ 1</a> |</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <a href="#">Tivi - Màn hình</a>
+            <div>
+                <div class="clear">
+                    <div class="f-left"><a href="#" class="f-size">Tivi - Màn hình TV11</a> |</div>
+                    <div class="f-left w-600">
+                        <ul class="menu-1">
+                            <li><a href="#">Điện máy - điện dân dụng</a> |</li>
+                            <li><a href="#">PC - Máy tính đồng bộ</a> |</li>
+                            <li><a href="#">Laptop & Macbook</a> |</li>
+                            <li><a href="#">Tivi - Màn hình TV</a> |</li>
+                            <li><a href="#">Điện máy - điện dân dụng</a> |</li>
+                            <li><a href="#">PC - Máy tính đồng bộ</a> |</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clear">
+                    <div class="f-left"><a href="#" class="f-size">Tivi - Màn hình TV1</a> |</div>
+                    <div class="f-left w-600">
+                        <ul class="menu-1">
+                            <li><a href="#">Điện máy - điện dân dụng 1</a> |</li>
+                            <li><a href="#">PC - Máy tính đồng bộ 1</a> |</li>
+                            <li><a href="#">Laptop & Macbook 1</a> |</li>
+                            <li><a href="#">Tivi - Màn hình TV 1</a> |</li>
+                            <li><a href="#">Điện máy - điện dân dụng 1</a> |</li>
+                            <li><a href="#">PC - Máy tính đồng bộ 1</a> |</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li><a href="#">Điện máy - điện dân dụng</a></li>
+        <li><a href="#">PC - Máy tính đồng bộ</a></li>
+        <li><a href="#">Laptop & Macbook</a></li>
+        <li><a href="#">Tivi - Màn hình TV</a></li>
+        <li><a href="#">Điện máy - điện dân dụng</a></li>
+        <li><a href="#">PC - Máy tính đồng bộ</a></li>
+    </ul>
+</body>
+</html>

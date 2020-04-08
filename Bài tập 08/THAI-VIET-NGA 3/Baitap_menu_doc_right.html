@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .menu {
+        background-color: gold;
+        width: 20%;
+    }
+    
+    .menu li {
+        list-style: none;
+    }
+    
+    .menu>li {
+        position: relative;
+    }
+    
+    .menu a {
+        line-height: 20px;
+        padding: 10px;
+        display: block;
+        text-transform: uppercase;
+    }
+    
+    .menu>li>ul {
+        position: absolute;
+        display: none;
+    }
+    
+    .menu>li:hover>a {
+        background-color: goldenrod;
+    }
+    
+    .menu>li>ul>li:hover>a {
+        background-color: goldenrod;
+    }
+    
+    .menu li:hover ul {
+        background-color: gold;
+        display: block;
+        left: 100%;
+        top: 0;
+        width: 60%;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+</style>
+
+<body>
+    <ul class="menu">
+        <li>
+            <a href="">Điện thọai</a>
+        </li>
+        <li>
+            <a href="">Laptop</a>
+            <ul>
+                <li>
+                    <a href="">Dell</a>
+                </li>
+                <li>
+                    <a href="">Asus</a>
+                </li>
+                <li>
+                    <a href="">Mac</a>
+                </li>
+                <li>
+                    <a href="">Lennovo</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="">Tivi</a>
+        </li>
+        <li>
+            <a href="">Tủ lạnh</a>
+            <ul>
+                <li>
+                    <a href="">Toshiba</a>
+                </li>
+                <li>
+                    <a href="">LG</a>
+                </li>
+                <li>
+                    <a href="">Panasonic</a>
+                </li>
+                <li>
+                    <a href="">Samsung</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+
+</html>

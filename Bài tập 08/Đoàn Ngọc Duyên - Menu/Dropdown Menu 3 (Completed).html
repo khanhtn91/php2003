@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Duyen - Menu 3 (Completed)</title>
+<style>
+body{
+    margin: 0;
+    padding: 0;
+    font-family:poppins;
+    background: url("Salad.jpeg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+a{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.Main-menu{
+    background: #262626;
+}
+.Main-menu:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.Main-menu ul{
+    list-style: none;
+    margin: 0;
+}
+.Main-menu > ul > li{
+    float: left;
+    position: relative;
+}
+.Main-menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 20px;
+    display: block;
+}
+.Main-menu ul li:hover a{
+    background: #34495e;
+}
+
+.Main-menu ul ul{
+    position: absolute;
+    padding: 0;
+    min-width: 160px;
+    display: none;
+    top: 100%;
+    left: 0;
+}
+.Main-menu ul li:hover > ul{
+    display: block;
+}
+.Main-menu ul ul li:hover a{
+    background: #262626;
+}
+.Main-menu ul ul li{
+    position: relative;
+}
+.Main-menu ul ul ul{
+    top: 0;
+    left: 100%;
+}
+.Main-menu ul ul ul li:hover a{
+    background: #34495e;
+}
+</style>
+</head>
+<body>
+<div class="Main-menu">
+    <ul>
+        <li><a href="#">Appertizer</a></li>
+        <li><a href="#">Soup</a></li>
+        <li><a href="#">Salad &raquo;</a>
+            <ul>
+                <li><a href="#">Salad 1</a></li>
+                <li><a href="#">Salad 2</a></li>
+                <li><a href="#">Salad 3</a></li>
+                <li><a href="#">Salad 4 &raquo;</a>
+                    <ul>
+                        <li><a href="#">Cobb Salad</a></li>
+                        <li><a href="#">Larb</a></li>
+                        <li><a href="#">Mexican Salad</a></li>
+                        <li><a href="#">Waldorf Salad &raquo;</a>
+                            <ul>
+                                <li><a href="#">Gado Gado</a></li>
+                                <li><a href="#">Herring Salad</a></li>
+                                <li><a href="#">Nicoise Salad</a></li>
+                                <li><a href="#">Tabbouleh</a></li>
+                                <li><a href="#">Fiambre</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Israeli Salad</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Salad 5</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Dessert</a></li>
+        <li><a href="#">Drink</a></li>
+    </ul>
+</div>
+</body>
+</html>

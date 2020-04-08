@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <style>
+            body{
+                width: 1360px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            ul.menuroot{
+                list-style-type: none;
+                background-color: rgb(182, 52, 0);
+                width: max-content;
+                height: 100vh;
+                margin: 0;
+                padding: 0;
+            }
+            ul.menuroot>li{
+                display: block;
+                position: relative;
+            }
+            ul.menuroot>li:hover{
+                background-color: black;
+            }
+            ul.menuroot a{
+                display: block;
+                text-decoration: none;
+                color: white;
+                font-family: sans-serif;
+                font-size: 18px;
+                font-weight: bold;
+                padding: 14px 16px;
+            }
+            ul.menuchild{
+                display: none;
+                list-style-type: none;
+                background-color: rgb(88, 88, 88);
+                padding: inherit;
+            }
+            li:hover>ul.menuchild{
+                display: block;
+            }
+            ul.menuchild>li:hover{
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="menuroot">
+                    <li><a href="#">Trang Chủ</a></li>
+                    <li>
+                        <a href="#">Sản phẩm</a>
+                        <ul class="menuchild">
+                            <li><a href="#">Bánh ngọt</a></li>
+                            <li><a href="#">Bánh mặn</a></li>
+                            <li><a href="#">Bánh kem</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Dịch vụ</a>
+                        <ul class="menuchild">
+                            <li><a href="#">Thiết kế mẫu bánh</a></li>
+                            <li><a href="#">Khóa học làm bánh</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </header>
+    </body>
+</html>

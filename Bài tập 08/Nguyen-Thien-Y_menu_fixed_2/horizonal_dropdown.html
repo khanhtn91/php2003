@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <style>
+            body{
+                width: 1360px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            nav {
+                text-align: center;
+            }
+            ul.menuroot{
+                list-style-type: none;
+                background-color: rgb(128, 34, 0);
+                color: white;
+                margin: 0;
+                padding: 0;
+            }
+            ul.menuroot>li{
+                display: inline-block;
+                position: relative;
+            }
+            ul.menuroot li:hover{
+                background-color: black;
+            }
+            ul.menuroot a{
+                display: block;
+                text-decoration: none;
+                padding: 14px 16px;
+                color: white;
+                font-family: sans-serif;
+                font-size: 18px;
+                font-weight: bold;
+            }
+            ul.menuchild{
+                display: none;
+                list-style-type: none;
+                background-color: rgb(99, 99, 99);
+                color: white;
+                position: absolute;
+                padding: 0;
+                width: max-content;
+                border-left: gray 2px solid;
+            }
+            ul.menuchild li{
+                position: relative;
+            }
+            ul.menuchild1 {
+                display: none;
+                list-style-type: none;
+                background-color: rgb(99, 99, 99);
+                color: white;
+                position: absolute;
+                top: 0px;
+                left: 100%;
+                padding: 0;
+                width: max-content;
+                border-left: gray 2px solid;
+            }
+            li:hover>ul.menuchild,
+            li:hover>ul.menuchild1 {
+                display: block;
+            }
+            
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="menuroot">
+                    <li><a href="#">Trang Chủ</a></li>
+                    <li>
+                        <a href="#">Sản phẩm</a>
+                        <ul class="menuchild">
+                            <li>
+                                <a href="#">Bánh ngọt</a>
+                                <ul class="menuchild1">
+                                    <li>
+                                        <a href="#">Su kem</a>
+                                        <ul class="menuchild1">
+                                            <li><a href="#">Su kem lạnh Su kem lạnh</a></li>
+                                            <li><a href="#">Su kem chiên</a></li>
+                                            <li><a href="#">Su kem sầu riêng</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Hạnh nhân</a></li>
+                                    <li><a href="#">Nhân dừa</a></li>
+                                    <li>
+                                        <a href="#">Mứt trái cây</a>
+                                        <ul class="menuchild1">
+                                            <li><a href="#">Mứt táo</a></li>
+                                            <li><a href="#">Mứt dâu</a></li>
+                                            <li><a href="#">Mứt dứa</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Bánh mặn</a>
+                                <ul class="menuchild1">
+                                    <li><a href="#">Patéchaud</a></li>
+                                    <li><a href="#">Nhân thịt</a></li>
+                                    <li><a href="#">Bông lan trứng muối</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Bánh kem</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Dịch vụ</a>
+                        <ul class="menuchild">
+                            <li><a href="#">Thiết kế mẫu bánh</a></li>
+                            <li><a href="#">Khóa học làm bánh</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </header>
+    </body>
+</html>

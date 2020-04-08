@@ -1,0 +1,235 @@
+body {
+    margin: 0;
+    background-color: blanchedalmond;
+    text-align: center;
+    width: auto;
+}
+
+.Overall-page {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.Header {
+    width: 1100px;
+    height: 350px;
+    margin: auto;
+    position: relative;
+}
+
+.Intro {
+    position: absolute;
+    bottom: 190px;
+    left: 250px;
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+}
+
+.Tel {
+    position: absolute;
+    bottom: 25px;
+    left: 40px;
+    font-size: 20px;
+    font-weight: bolder;    
+}
+
+.Huong {
+    position: absolute;
+    bottom: 25px;
+    left: 225px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.Hien {
+    position: absolute;
+    bottom: 25px;
+    left: 445px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.Header-nav {
+    width: 1100px;
+    background-image: url(menu_bg.png);
+    margin: auto;
+    overflow: auto;
+}
+
+.Header-nav-ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.Header-nav-ul>li {
+    float: left;
+}
+
+.Header-nav-ul a {
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    width: 125px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 15px;
+}
+
+.Header-nav-ul li:hover a {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.Vertical-menu {
+    background-color: white;
+    float: left;
+    text-align: left;
+    margin-top: 10px;
+    padding: 35px;
+    height: 1473px;
+}
+
+.Header-image {
+    margin-top: -20px;
+}
+
+.Vertical-menu-ul > li {
+    list-style-type: square;
+    color: blueviolet;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.Vertical-menu-ul li ul li {
+    list-style-type: circle;
+    font-weight: lighter;
+}
+
+.Vertical-menu-ul a {
+    text-decoration: none;
+    padding-top: 20px;
+    line-height: 1.5;
+}
+
+.Vertical-menu-title {
+    color: blueviolet;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.Slide-image {
+    float: left;
+    width: 796px;
+    height: 250px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.Products {
+    float: left;
+    margin-top: 10px;
+    margin-left: 30px;
+    width: 750px;
+}
+
+.Content-title {
+    text-align: left;
+    color: blueviolet;
+    font-size: 20px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.Price {
+    font-weight: bolder;
+}
+
+.Product-column {
+    float: left;
+    width: 30%;
+    padding: 10px 10px 10px 10px;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.Product-row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.Product1 {
+    float: left;
+    width: 30%;
+    padding: 10px 10px 10px 10px;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.Product2 {
+    float: left;
+    width: 30%;
+    padding: 10px 10px 10px 10px;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.Product3 {
+    float: left;
+    width: 30%;
+    padding: 10px 10px 10px 10px;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.Footer-nav {
+    clear: both;
+    width: 1100px;
+    background-color: white;
+    margin: auto;
+    overflow: auto;
+}
+
+.Footer-nav-ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.Footer-nav-ul>li {
+    float: right;
+}
+
+.Footer-nav-ul a {
+    color: dodgerblue;
+    font-weight: bold;
+    font-size: 14px;
+    width: 125px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 15px;
+}
+
+.Footer-nav-ul li:hover a {
+    color: red;
+}
+
+.Footer {
+    clear: both;
+    margin-bottom: 20px;
+    margin-bottom: 20px;
+}
